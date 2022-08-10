@@ -10,7 +10,7 @@ header{
     height: 60px;
     background: black;
     border-bottom: 2px solid;
-    border-color: red;
+    border-color: rgb(101, 101, 101);
     position: fixed;
     overflow: hidden;
 }
@@ -49,7 +49,7 @@ header{
 .top{
     margin-bottom: 0px;
     margin-top: 60px;
-    min-height: 500px;
+    min-height: 550px;
     background-image: url("img/title\ background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -63,11 +63,11 @@ header{
     font-size: 20px;
 }
 #continer p span{
-    color: aqua;
+    color: rgb(1, 255, 31);
     font-weight: bold;
 }
 .typing{
-    color: red;
+    color: rgb(180, 82, 82);
     font-size: 30px;
 }
 #continer li{
@@ -103,19 +103,24 @@ header{
     vertical-align: middle;
 }
 #about #about-contant{
-    width: 50%;
-    height: 200px;
+    width: 47%;
+    margin-top: 40px;
+    margin-right: 1%;   
+    padding: 1%;
+    background-color: gold;
     float: right;
 }
 #about-contant h2{
-    padding: 20px;
+    margin-left: 20px;
     size: 50px;
     text-align: left;
 }
 #about-contant p{
     margin-left: 10px;
+    margin-right: 10px;
     font-size: 20px;
-    text-align: left;
+    font-weight: 800;
+    text-align: justify;
     font-weight: 400;
 }
 #about-contant table{
@@ -148,6 +153,8 @@ header{
     transition-duration: 0.5s;
 }
 #services{
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
 #services h2{
     width: 100%;
@@ -162,8 +169,19 @@ header{
     background-color: white ;
     display: inline-block;
 }
-#box h3,p{
-    margin-left: 40px;
+#box h3{
+    text-align: center;
+}
+#box #boxcontent{
+    padding: 0px 20px ;
+    text-align: justify;    
+}
+#box:hover{
+    
+    background-image: linear-gradient(to right top, #063c8e, #0073c4, #00a4bc, #00ce7d, #a8eb12);
+    color: #fff;
+}
+#box:hover img{
 }
 #box-img{
     margin-top: 10px;
@@ -188,7 +206,7 @@ header{
 #hire #b{
     padding-top:100px;
     height: 100px;
-    color:rgb(0, 162, 255);
+    color:rgb(255, 255, 255);
     font-family:'Arial Narrow Bold';
     font-style: oblique;
     font-size: 50px;
@@ -224,8 +242,14 @@ header{
     border-radius: 15px;
     background-color: white ;
     display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    background-image: linear-gradient(to right top, #063c8e, #0073c4, #00a4bc, #00ce7d, #a8eb12);
 }
 #work-box:hover{
+    background-image: linear-gradient(to right top, #fff,#fff);
+    color: #000;
     box-shadow:none; 
 
 }
@@ -237,20 +261,23 @@ header{
     width: 250px;
 }
 #work-img img{
+    border-radius: 15px 15px 0 0;
     width: 100%;
     height: 100%;
 }
 #contact{
     margin-top: 80px;
-    background-color: rgb(109, 109, 235);
+    background-color: #5e5e5e;
     text-align: center;
 }
-
+#bo1{
+    display: flex;
+    
+}
 #contact #bo {
-    margin:20px;
+    color: rgb(0, 0, 0);
     height: 230px;
     width: 400px;
-    border-radius: 15px;
     display: inline-block;
 }
 #contact div div div{
@@ -265,22 +292,34 @@ header{
     height: 100%;
 }
 #contact input{
-    height: 30px; 
-    width: 90%;
-    font-size: 20px;
-    margin: 5px 0;
+    height: 43px; 
+    width: 84%;
+    padding-left: 10;
+    font-size: 18px;
+    margin: 0px 0 5px 0px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius:0px 10px 10px 0; 
+
 }
 #contact textarea{
     height: 90px;
-    width: 90%;
+    width: 89%;
+    padding: 1%;
+    background-color: #f2f2f2;
+    border-radius:10px; 
+
 }
 #contact button{
-    margin-bottom: 20px;
-    height: 50px;
+    margin-top:10px; 
+    margin-bottom: 100px;
+    height: 70px;
     width: 300px;
+    color: white;
+    background-color:black;
     font-size: 30px;
-    color: whitesmoke;
-    background: black;
+    border: none;
+    border-radius:10px; 
 }
 #contact button:hover{
     border: 2px solid black;
@@ -288,8 +327,20 @@ header{
     color: black;
     transition-duration: 0.5s;
 }
+.fa{
+    font-size: x-large;
+}
+.icon {
+    padding: 15px;
+    background: rgb(0, 128, 255);
+    color: white;
+    min-width: 3%;
+    text-align: center;
+    border-radius: 10px 0 0px 10px;
+  }
 footer{
     margin-top: 50px;
+    margin-bottom: 20px;
     text-align: center; 
 }
 footer ul{

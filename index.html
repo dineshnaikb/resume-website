@@ -5,18 +5,19 @@
     <script src="js/lib/typed.min.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="instyle.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 <header>
     
-    <nav class="nav">
-            <span class="logo">Dinesh Naik</span>
+    <nav class="nav" data-aos="fade-right">
+            <span class="logo"  data-aos="fade-right" >Dinesh Naik</span>
         <ul id="nav-ul">
             <li ><a href="">Home</a></li>
             <li ><a href="#about">About</a></li>
             <li ><a href="#services">Services</a></li>
             <li ><a href="#work">My Work</a></li>
-            <li ><a href="">Client</a></li>
-            <li ><a href="">Me</a></li>
             <li ><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -25,7 +26,7 @@
     <div id="continer">
          <br>
          <br>
-    <p>Hello , My name is <span>B Dinesh Naik</span></p>
+    <p>Hello , My name is <span>Bukke Dinesh Naik</span></p>
     <h1>I'M <span class="typing"></span>
       </h1>
       <script>
@@ -36,11 +37,11 @@
 });</script>
     <p>Get the Target,Set the Target,Reach be on the Target</p>
     <ul>
-        <li><a href="" ><img src="img/icon/Facebook_50px.png" alt="facebook"></a></li>
-        <li><a href="" ><img src="img/icon/Instagram Old_48px.png" alt="instgram"></a></li>
-        <li><a href="" ><img src="img/icon/LinkedIn_48px.png" alt="linkedin"></a></li>
-        <li><a href="" ><img src="img/icon/WhatsApp_48px.png" alt="whatsapp"></a></li>
-        <li><a href="" ><img src="img/icon/Google Plus_48px.png" alt="google plus"></a></li>
+        <li><a href="https://www.facebook.com/simha.naik.7" ><img src="img/icon/Facebook_50px.png" alt="facebook"></a></li>
+        <li><a href="https://www.instagram.com/hacker____ghost/" ><img src="img/icon/Instagram Old_48px.png" alt="instgram"></a></li>
+        <li><a href="https://www.linkedin.com/in/bdineshnaik/" ><img src="img/icon/LinkedIn_48px.png" alt="linkedin"></a></li>
+        <li><a href="https://wa.me/+919951437309" ><img src="img/icon/WhatsApp_48px.png" alt="whatsapp"></a></li>
+        <li><a href="mailto:naik984907@gmail.com" ><img src="img/icon/Google Plus_48px.png" alt="google plus"></a></li>
     </ul>
 </div>
 </section>
@@ -49,7 +50,7 @@
     <br>
     <br>
     <div id="title-about">
-        <span >About</span>
+        <span style="text-decoration: underline;text-underline-position:under;">About</span>
     </div>
     <div id="my-pic">
         <img src="img/ha.png"  alt="image">
@@ -63,7 +64,17 @@
                 <td><b>Address:</b>rayachoti</td>
               </tr>
               <tr>
-                <td><b>age:</b>20</td>
+                <td><b>age:</b><span id="age">1</span></td>
+                <script>
+                    const getAgeFromBirthDate = (year, month, day) => {
+                    const date = new Date();
+                    date.setFullYear(date.getFullYear() - year);
+                    date.setMonth(date.getMonth() - month);
+                    //date.setDate(date.getDate() - day);
+                    return date;
+                };
+                    document.getElementById("age").innerHTML=' '+getAgeFromBirthDate(1999,06,11).getFullYear()+ ' years';
+                </script>
                 <td><b>phone:</b>9951437309</td>
                 </tr>
         </table>
@@ -74,53 +85,65 @@
 <section id="services">
     <br>
     <br>
-    <h2 style="font-size:50px;">Services</h2>
+    <h2 style="font-size:50px; text-decoration: underline;text-underline-position:under;">Services</h2>
     <div id="box">
+        <div id="boxcontent">
         <div id="box-img"> 
             <img src="img/icon/Source Code_100px.png">
         </div>
         <h3>Programmer</h3>
-        <p> You can also add the cursor property with a value of "not-allowed", which will display a "no parking sign" when you mouse over the button</p>
+        <p>Computer programming is the process of performing by designing and building an executable computer program.</p>
+        </div>
     </div>
     <div id="box">
+        <div id="boxcontent">
             <div id="box-img"> 
                 <img src="img/icon/Wacom Tablet_50px.png">
             </div>
                 <h3>Designer</h3>
-                <p> You can also add the cursor property with a value of "not-allowed", which will display a "no parking sign" when you mouse over the button</p>
+                <p> A design is a plan or specification for the construction of an object or system or for the implementation of an activity </p>
+                </div>
             </div>
             <div id="box">
+                <div id="boxcontent">
                 <div id="box-img"> 
                     <img src="img/icon/Video Editing_96px.png">
                 </div>
                 <h3>Video Editing</h3>
-                <p> You can also add the cursor property with a value of "not-allowed", which will display a "no parking sign" when you mouse over the button</p>
+                <p>  Video editing is used to structure and present all video information, including films, video advertisements and video essays.</p>
+                </div>
             </div>
             <div id="box">
+                <div id="boxcontent">
                 <div id="box-img"> 
                 <img src="img/icon/Python_100px.png">
             </div>
         <h3>Python</h3>
-        <p> You can also add the cursor property with a value of "not-allowed", which will display a "no parking sign" when you mouse over the button</p>
+        <p> Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+        </div>
     </div>
     <div id="box">
+        <div id="boxcontent">
             <div id="box-img"> 
         <img src="img/icon/Support_50px.png">
         </div>
         <h3>Support</h3>
-        <p> You can also add the cursor property with a value of "not-allowed", which will display a "no parking sign" when you mouse over the button</p>
+        <p>  Supports in engineering and construction mean parts of the construction that prevent the construction from breaking down, such as arch, beam , column. Sympathy Political Advocacy.</p>
+        </div>
     </div>
     <div id="box">
+        <div id="boxcontent">
         <div id="box-img">         
         <img src="img/icon/Anonymous Mask_50px.png">
         </div>
         <h3>Hacking</h3>
-        <p> You can also add the cursor property with a value of "not-allowed", which will display a "no parking sign" when you mouse over the button</p>
+        <p> A security hacker is someone who explores methods for breaching defenses and exploiting weaknesses in a computer system or network. Hackers may be motivated</p>
+        </div>
     </div>
 </section>
 <section id="hire">
     <div id="b">
-        <span>Hire me for your next project</span>
+        <span style="background-color: rgb(97, 85, 36);">&nbsp;  Hire me for your next project  &nbsp;</span>
     </div>
         <button>Contact Me</button>
 </section>
@@ -128,75 +151,93 @@
     <br>
     <br>
     <br>
-    <span>My Works</span><br>
+    <span style="text-decoration: underline;text-underline-position:under;">My Works</span><br>
+    <a href="">
     <div id="work-box">
         <div id="work-img">
-            <img src="img/main-img.jpg">
+            <img src="img/dormakaba-Blog-Post-pictures-_-1024-x-683-83.webp">
         </div>
-        <h3>opencv</h3>
+        <h3>OpenCV</h3>
     </div>
+    </a>
+    <a href="">
     <div id="work-box">
             <div id="work-img">
                 <img src="img/voice_assistant.jpeg">
             </div>
-        <h3>voice assistant</h3>
+        <h3>Voice Assistant</h3>
     </div>
+    </a>
     <a href="">
         <div id="work-box">
             <div id="work-img">
                 <img src="img/machine-learning.jpg">
             </div>
-            <h3>machine learning</h3>
+            <h3>Machine Learning</h3>
         </div>
     </a>
+    <a href="">
     <div id="work-box">
             <div id="work-img">
                 <img src="img/python.png">
             </div>
-        <h3>python</h3>
+        <h3>Python</h3>
     </div>
+    </a>
+    <a href="">
     <div id="work-box">
             <div id="work-img">
                 <img src="img/GettyImages-961775200.jpgIoT-and-integration-696x487.jpg">
             </div>
-        <h3>Internet of things(IOT)</h3>
+        <h3>Internet Of Things (IOT)</h3>
     </div>
+    </a>
+    <a href="">
     <div id="work-box">
             <div id="work-img">
                 <img src="img/ResponsiveWebDesign-e1447282926766.jpg">
             </div>
-        <h3>website</h3>
+        <h3>Website</h3>
     </div>
+    </a>
+    <a href="">
     <div id="work-box">
             <div id="work-img">
-                <img src="img/1046x616-video.png">
+                <img src="img/video-editor-concept.webp">
             </div>
-        <h3>video edition</h3>
+        <h3>Video Edition</h3>
     </div>
+    </a>
+    <a href="">
     <div id="work-box">
             <div id="work-img">
                 <img src="img/000-Web-UI-Design.png">
             </div>
-        <h3>ui_Designer/android</h3>
+        <h3>UI_Designer/Android</h3>
     </div>
+    </a>
 </section>
 <section id="contact">
     <div>
         <br>
-        <h2 style="color:aliceblue;font-size:50px;">contact</h2>
+        <h2 style="color:rgb(0, 0, 0);font-size:50px;text-decoration: underline;text-underline-position:under;">contact</h2>
+        <div id="bo1">
         <div id="bo">
             <div>
                 <img src="img/icon/Address_50px.png">
             </div>
             <h3>My location:</h3>
-            <span>39/107-75k,taguru street,rayachoti,kadapa(dist),AP,516269</span>
+            <span>39/107-75k,taguru street,<br>
+                rayachoti,
+                kadapa(dist),
+                AP,516269</span>
         </div>
         <div id="bo">
             <div>
                 <img src="img/icon/iPhone_50px.png">
             </div>
             <h3>My Number:</h3>
-            <span>9951437309</span>
+            <span>+91-9951437309</span>
         </div>
         <div id="bo">
             <div>
@@ -205,12 +246,14 @@
             <h3>My Email:</h3>
             <span>naik984907@gmail.com</span>
         </div>
+        </div>
     </div>
     <div>
         <form action="">
+        <i class="fa fa-user icon"></i>
         <input type="text" name="" placeholder="Name" required="required" data-error="name is required"><br>
+        <i class="fa fa-envelope icon"></i>
         <input type="text" name="" placeholder="Email" required="required" data-error="Email is required"><br>
-        <input type="text" name="" placeholder="Subject" required="required" data-error="subject is requried"><br>
         <textarea placeholder="type your message" required="required" data-error="message is requried"></textarea><br>
         <button>submit</button>
         </form>
@@ -218,13 +261,35 @@
 </section>
 <footer>
     <ul>
-            <li><a href="" ><img src="img/icon/Facebook_50px.png" alt="facebook"></a></li>
-            <li><a href="" ><img src="img/icon/Instagram Old_48px.png" alt="instgram"></a></li>
-            <li><a href="" ><img src="img/icon/LinkedIn_48px.png" alt="linkedin"></a></li>
-            <li><a href="" ><img src="img/icon/WhatsApp_48px.png" alt="whatsapp"></a></li>
-            <li><a href="" ><img src="img/icon/Google Plus_48px.png" alt="google plus"></a></li>
+            <li><a href="https://www.facebook.com/simha.naik.7" ><img src="img/icon/Facebook_50px.png" alt="facebook"></a></li>
+            <li><a href="https://www.instagram.com/hacker____ghost/" ><img src="img/icon/Instagram Old_48px.png" alt="instgram"></a></li>
+            <li><a href="https://www.linkedin.com/in/bdineshnaik/" ><img src="img/icon/LinkedIn_48px.png" alt="linkedin"></a></li>
+            <li><a href="https://wa.me/+919951437309" ><img src="img/icon/WhatsApp_48px.png" alt="whatsapp"></a></li>
+            <li><a href="mailto:naik984907@gmail.com" ><img src="img/icon/Google Plus_48px.png" alt="google plus"></a></li>
         </ul>
     <span>all copyrights by hackerghost</span>
 </footer>
 </body>
+<script>
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: true, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
 </html>
