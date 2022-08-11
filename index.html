@@ -5,15 +5,13 @@
     <script src="js/lib/typed.min.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="instyle.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 <header>
     
-    <nav class="nav" data-aos="fade-right">
-            <span class="logo"  data-aos="fade-right" >Dinesh Naik</span>
-        <ul id="nav-ul">
+    <nav class="nav">
+            <span class="logo">Dinesh Naik</span>
+        <ul id="nav-ul" >
             <li ><a href="">Home</a></li>
             <li ><a href="#about">About</a></li>
             <li ><a href="#services">Services</a></li>
@@ -36,7 +34,7 @@
   loop:true
 });</script>
     <p>Get the Target,Set the Target,Reach be on the Target</p>
-    <ul>
+    <ul >
         <li><a href="https://www.facebook.com/simha.naik.7" ><img src="img/icon/Facebook_50px.png" alt="facebook"></a></li>
         <li><a href="https://www.instagram.com/hacker____ghost/" ><img src="img/icon/Instagram Old_48px.png" alt="instgram"></a></li>
         <li><a href="https://www.linkedin.com/in/bdineshnaik/" ><img src="img/icon/LinkedIn_48px.png" alt="linkedin"></a></li>
@@ -50,12 +48,12 @@
     <br>
     <br>
     <div id="title-about">
-        <span style="text-decoration: underline;text-underline-position:under;">About</span>
+        <span   style="text-decoration: underline;text-underline-position:under;">About</span>
     </div>
     <div id="my-pic">
-        <img src="img/ha.png"  alt="image">
+        <img  src="img/ha.png"  alt="image">
     </div>
-    <div id="about-contant">
+    <div id="about-contant" >
         <h2>Hello</h2>
         <p>I’m Dinesh Naik  . I am a programmer, and I'm very passionate and dedicated to my work. most of my this done with python programming, I have acquired the skills and knowledge necessary to make your project a success.</p>
         <table>
@@ -82,7 +80,7 @@
         <button>Hire me</button>
     </div>
 </section>
-<section id="services">
+<section id="services" >
     <br>
     <br>
     <h2 style="font-size:50px; text-decoration: underline;text-underline-position:under;">Services</h2>
@@ -227,7 +225,7 @@
                 <img src="img/icon/Address_50px.png">
             </div>
             <h3>My location:</h3>
-            <span>39/107-75k,taguru street,<br><br>
+            <span style="line-height: 1px;">39/107-75k,taguru street,<br>
                 rayachoti,
                 kadapa(dist),
                 AP,516269</span>
@@ -271,25 +269,5 @@
 </footer>
 </body>
 <script>
-    AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
-
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: true, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-});
   </script>
 </html>
